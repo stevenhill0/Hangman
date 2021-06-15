@@ -12,31 +12,31 @@ const data = [
   },
 ];
 
-const newWord = (setWord) => {
-  let words = Math.floor(Math.random() * data[0].puzzle.length);
-  const selectedWord = data[0].puzzle[words];
+// const newWord = (setWord) => {
+//   let words = Math.floor(Math.random() * data[0].puzzle.length);
+//   const selectedWord = data[0].puzzle[words];
 
-  selectedWord.forEach(() => {
-    setWord();
-  });
+//   selectedWord.forEach(() => {
+//     setWord();
+//   });
 
-  return selectedWord;
-};
+//   return selectedWord;
+// };
 
-const setWord = () => {
-  const paragraph = document.createElement('p');
+// const setWord = () => {
+//   const paragraph = document.createElement('p');
 
-  document.getElementById('words').appendChild(paragraph);
+//   document.getElementById('words').appendChild(paragraph);
 
-  const paraClass = document.createAttribute('class');
-  paraClass.value = 'border-bottom border-primary lineUp';
-  paragraph.setAttributeNode(paraClass);
-};
+//   const paraClass = document.createAttribute('class');
+//   paraClass.value = 'border-bottom border-primary lineUp';
+//   paragraph.setAttributeNode(paraClass);
+// };
 
-const test = ['j'];
-('');
-console.log(test);
-console.log(test.includes('j'));
+//array for testing. Im typing a letter or two, clicking the button then opening console.log to see updated data
+const test = [];
+console.log(test); // values are pushed to this array and can be seen in console.log
+console.log(test.join()); // values are not there anymore for some reason. When looking at console.log shows nothing
 
 const storeGuess = () => {
   const button = document.getElementById('button');
@@ -47,25 +47,16 @@ const storeGuess = () => {
   });
 };
 
-const parseGuess = (newWord) => {
-  const guesses = data[0].guesses;
-  // const storedGuesses = data[0].storedGuesses;
+// const parseGuess = (newWord) => {
+//   const guesses = data[0].guesses;
+//   // const storedGuesses = data[0].storedGuesses;
 
-  const storedGuesses = { ...guesses };
+//   const storedGuesses = { ...guesses };
 
-  // console.log(guesses);
-  // console.log(guesses);
-  // console.log(guesses.join());
-
-  // console.log(guesses);
-  // console.log(storedGuesses);
-
-  console.log(
-    newWord.every((letter) => {
-      return letter.match(/b|i|r|d/);
-    })
-  );
-};
+//   newWord.every((letter) => {
+//     return letter.match(/b|i|r|d/);
+//   });
+// };
 
 storeGuess();
-parseGuess(newWord(setWord));
+// parseGuess(newWord(setWord));
