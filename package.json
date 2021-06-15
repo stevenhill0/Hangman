@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/stevenhill0/hangman/issues"
   },
-  "homepage": "https://github.com/stevenhill0/hangman#readme"
+  "homepage": "https://github.com/stevenhill0/hangman#readme",
+  "devDependencies": {
+    "eslint": "^7.28.0"
+  }
 }
