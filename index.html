@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <script src="src/js/app.js" defer></script>
+    <title>Hangman</title>
+</head>
+
+<body>
+    <div class="basic">
+
+        <div class="guessWord"></div>
+
+        <div class="word" id="words"></div>
+
+        <div class="guessesLeft">
+            <label for="" class="labelGuesses">GUESSES LEFT:</label>
+            <span>
+                <h3>10</h3>
+            </span>
+        </div>
+        <form action="" method="" class="submitGuess">
+
+            <div class="form-group ">
+                <label for="title"></label>
+                <input type="text" id="guess" class="mb-3 w-25" placeholder="Type Your Guess" maxlength="1">
+            </div>
+            <div class="form-group">
+                <button type="button" id="button" class="btn btn-primary w-25">GUESS LETTER</button>
+                <button type="button" class="btn btn-success">GUESS THE WORD</button>
+            </div>
+    </div>
+    </form>
+</body>
+
+</html>

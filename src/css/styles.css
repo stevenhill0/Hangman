@@ -1,0 +1,47 @@
+.basic {
+  padding: 10px;
+}
+
+label {
+  float: left;
+}
+
+.labelGuesses {
+  position: relative;
+  left: 31rem;
+  top: 9px;
+}
+
+span {
+  display: block;
+  overflow: hidden;
+  padding: 0px 4px 0px 6px;
+}
+
+.guessesLeft {
+  position: relative;
+  padding: 5rem;
+  top: 240px;
+  text-align: center;
+}
+
+.submitGuess {
+  position: relative;
+  padding: 10rem;
+  top: 40px;
+  text-align: center;
+}
+
+.word {
+  position: relative;
+  text-align: center;
+}
+
+.lineUp {
+  display: inline-block;
+  position: relative;
+  padding: 50px;
+  margin-left: 20px;
+  top: -80px;
+  margin-bottom: -300px;
+}
