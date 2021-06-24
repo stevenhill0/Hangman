@@ -9,7 +9,6 @@ label {
 .labelGuesses {
   position: relative;
   left: 31rem;
-  top: 9px;
 }
 
 span {
@@ -18,18 +17,23 @@ span {
   padding: 0px 4px 0px 6px;
 }
 
+.number {
+  position: relative;
+  top: -8px;
+}
 .guessesLeft {
   position: relative;
   padding: 5rem;
-  top: 240px;
+  top: 150px;
   text-align: center;
 }
 
 .submitGuess {
   position: relative;
-  padding: 10rem;
+  padding-top: 50px;
   top: 40px;
   text-align: center;
+  margin-bottom: -50px;
 }
 
 .word {
@@ -40,8 +44,71 @@ span {
 .lineUp {
   display: inline-block;
   position: relative;
-  padding: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
   margin-left: 20px;
-  top: -80px;
-  margin-bottom: -300px;
+  top: 150px;
+  user-select: none;
+  font-size: 50px;
+  margin-bottom: 0px;
+}
+
+.hangContainer {
+  position: absolute;
+  left: 150px;
+  top: 240px;
+}
+
+.headOverlay {
+  height: 125px;
+  width: 100px;
+  background-color: white;
+  top: 30px;
+  position: absolute;
+  left: -17px;
+}
+
+.bodyOverlay {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  top: 59px;
+  position: absolute;
+  left: -17px;
+}
+
+.lHandOverlay {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  top: 59px;
+  position: absolute;
+  left: -18px;
+}
+
+.rHandOverlay {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  top: 60px;
+  position: absolute;
+  left: 37px;
+}
+
+.lLegOverlay {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  top: 115px;
+  position: absolute;
+  left: -18px;
+}
+
+.rLegOverlay {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  top: 116px;
+  position: absolute;
+  left: 37px;
 }

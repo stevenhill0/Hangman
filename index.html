@@ -16,28 +16,39 @@
 </head>
 
 <body>
+
+    <div class="hangContainer ">
+        <div class="headOverlay" id="head"></div>
+        <div class="bodyOverlay" id="body"></div>
+        <div class="lHandOverlay" id="lHand"></div>
+        <div class="rHandOverlay" id="rHand"></div>
+        <div class="lLegOverlay" id="lLeg"></div>
+        <div class="rLegOverlay" id="rLeg"></div>
+
+        <img src="./src/img/hangman.png" alt="">
+    </div>
+
     <div class="basic">
 
         <div class="guessWord"></div>
 
-        <div class="word" id="words"></div>
+        <div class="word container" id="words"></div>
 
         <div class="guessesLeft">
-            <label for="" class="labelGuesses">GUESSES LEFT:</label>
+            <label for="" class="labelGuesses ">GUESSES LEFT:</label>
             <span>
-                <h3>10</h3>
+                <h3 id="guessAmount" class="number"></h3>
             </span>
         </div>
 
         <form action="" method="" class="submitGuess">
             <div class="form-group ">
                 <label for="title"></label>
-                <input type="text" id="guess" class="mb-3 w-25" placeholder="Type Your Guess">
+                <input type="text" id="guess" class="mb-3 w-25" placeholder="Type Your Guess" maxlength="1">
             </div>
 
             <div class="form-group">
                 <button type="button" id="button" class="btn btn-primary w-25">GUESS LETTER</button>
-                <button type="button" id="buttonTwo" class="btn btn-success">GUESS THE WORD</button>
             </div>
         </form>
 
