@@ -123,7 +123,9 @@ const wrongGuess = () => {
     gameOver();
   }
 
-  countGuess(countGuesses);
+  if (countGuesses > -1) {
+    countGuess(countGuesses);
+  }
 };
 
 const winner = (word) => {
